@@ -1,0 +1,123 @@
+.container {
+    margin: 8px;
+    border-radius: 4px;
+    background-color: #fff;
+
+    h1 {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #fafafa;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 2px solid #CDD9E4;
+}
+
+.formRow {
+    padding: 32px 16px;
+
+    & + .formRow {
+        border-top: 1px solid #CDD9E4;
+    }
+
+    input[type=text],
+    input[type=number] {
+        border: none;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance:textfield;
+    }
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: #fafafa;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: 2px solid #CDD9E4;
+
+    .submitButton {
+        padding: 20px 32px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #34495E;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.button {
+    padding: 4px 8px;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: #34495E;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.radioContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    position: relative;
+    cursor: pointer;
+
+    input {
+        position: absolute;
+        opacity: 0;
+
+        &:checked ~ .radio::before {
+            content: '';
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .radio {
+        position: relative;
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 1px solid #34495E;
+            transform: translate(-50%, -50%) scale(0.8);
+            transition: all 200ms;
+            transition-timing-function: cubic-bezier(0.64, 0.04, 0.35, 1);
+            opacity: 0;
+        }
+    }
+}

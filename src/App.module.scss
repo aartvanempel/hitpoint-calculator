@@ -1,0 +1,37 @@
+.container {
+    padding-bottom: 126px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.showOverlay {
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #34495E;
+        opacity: .6;
+    }
+}
+
+.bottomContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 2px solid #CDD9E4;
+    background-color: #fafafa;
+}
