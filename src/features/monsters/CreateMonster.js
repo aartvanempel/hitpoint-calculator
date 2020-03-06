@@ -14,7 +14,7 @@ export default ({ showCreateMonsterHandler }) => {
         const lastUsedColor = monsters[monsters.length - 1].color
         const lastUsedColorIndex = colors.findIndex(color => color === lastUsedColor)
 
-        initialSelectedColor = (lastUsedColorIndex < colors.length - 1) && colors[lastUsedColorIndex + 1]
+        initialSelectedColor = (lastUsedColorIndex < colors.length - 1) ? colors[lastUsedColorIndex + 1] : colors[0]
     }
 
 
@@ -63,7 +63,7 @@ export default ({ showCreateMonsterHandler }) => {
                     <div className={styles.formRow}>
                         <input
                             placeholder="Max HP"
-                            inputmode="numeric" 
+                            inputmode="numeric"
                             pattern="[0-9]*"
                             type='text'
                             value={maxHp}
