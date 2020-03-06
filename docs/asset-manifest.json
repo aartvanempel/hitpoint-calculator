@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hitpoint-calculator/static/css/main.a52a9149.chunk.css",
-    "main.js": "/hitpoint-calculator/static/js/main.e24cedbc.chunk.js",
-    "main.js.map": "/hitpoint-calculator/static/js/main.e24cedbc.chunk.js.map",
+    "main.js": "/hitpoint-calculator/static/js/main.da8f713d.chunk.js",
+    "main.js.map": "/hitpoint-calculator/static/js/main.da8f713d.chunk.js.map",
     "runtime-main.js": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js",
     "runtime-main.js.map": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js.map",
     "static/js/2.242b2e75.chunk.js": "/hitpoint-calculator/static/js/2.242b2e75.chunk.js",
     "static/js/2.242b2e75.chunk.js.map": "/hitpoint-calculator/static/js/2.242b2e75.chunk.js.map",
     "index.html": "/hitpoint-calculator/index.html",
-    "precache-manifest.158c95345baa38e58555d5f6b79b4ea2.js": "/hitpoint-calculator/precache-manifest.158c95345baa38e58555d5f6b79b4ea2.js",
+    "precache-manifest.efdcda5ec82ebe6ff67d4c76a1a8dd6e.js": "/hitpoint-calculator/precache-manifest.efdcda5ec82ebe6ff67d4c76a1a8dd6e.js",
     "service-worker.js": "/hitpoint-calculator/service-worker.js",
     "static/css/main.a52a9149.chunk.css.map": "/hitpoint-calculator/static/css/main.a52a9149.chunk.css.map",
     "static/js/2.242b2e75.chunk.js.LICENSE.txt": "/hitpoint-calculator/static/js/2.242b2e75.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.14e136bd.js",
     "static/js/2.242b2e75.chunk.js",
     "static/css/main.a52a9149.chunk.css",
-    "static/js/main.e24cedbc.chunk.js"
+    "static/js/main.da8f713d.chunk.js"
   ]
 }
