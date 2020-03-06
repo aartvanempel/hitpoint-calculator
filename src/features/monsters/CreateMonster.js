@@ -63,7 +63,9 @@ export default ({ showCreateMonsterHandler }) => {
                     <div className={styles.formRow}>
                         <input
                             placeholder="Max HP"
-                            type='number'
+                            inputmode="numeric" 
+                            pattern="[0-9]*"
+                            type='text'
                             value={maxHp}
                             onChange={e => setMaxHp(e.target.value)}
                         />
