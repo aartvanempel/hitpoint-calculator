@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hitpoint-calculator/precache-manifest.efdcda5ec82ebe6ff67d4c76a1a8dd6e.js"
+  "/hitpoint-calculator/precache-manifest.341fbc0e32cb978003d71bb2e5296d86.js"
 );
 
 self.addEventListener('message', (event) => {
