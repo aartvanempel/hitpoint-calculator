@@ -63,7 +63,7 @@ export default ({ showCreateMonsterHandler }) => {
                     <div className={styles.formRow}>
                         <input
                             placeholder="Max HP"
-                            inputmode="numeric"
+                            inputMode="numeric"
                             pattern="[0-9]*"
                             type='text'
                             value={maxHp}
@@ -74,8 +74,8 @@ export default ({ showCreateMonsterHandler }) => {
                     <div className={`${styles.formRow} ${styles.radioContainer}`}>
                         {
                             colors.map((colorOption, index) => (
-                                <div>
-                                    <label className={styles.label} key={index}>
+                                <div key={index}>
+                                    <label className={styles.label}>
                                         <input
                                             type='radio'
                                             checked={color === colorOption}
