@@ -4,9 +4,14 @@ body {
 
 * {
   font-family: 'Merriweather', serif;
+  line-height: 1.5;
   outline: none;
 }
 
 *:focus {
   outline: none;
+}
+
+input {
+  width: 100%;
 }

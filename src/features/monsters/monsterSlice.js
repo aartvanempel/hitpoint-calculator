@@ -8,8 +8,8 @@ export const monsters = createSlice({
         monsters: [
             {
                 id: 0,
-                name: 'Goblin 1',
-                currentHp: 10,
+                name: 'Goblin',
+                currentHp: 12,
                 maxHp: 50,
                 color: '#E74C3C'
             }

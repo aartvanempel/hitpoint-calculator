@@ -14,7 +14,7 @@ export default () => {
                 <h1>Hitpoint Calculator</h1>
             </div>
             <div className={styles.linkContainer}>
-                <div>
+                <div onClick={() => dispatch(toggleScreen({screen: 'faq'}))}>
                     <span>faq</span>
                 </div>
                 <div onClick={() => monsters.length && dispatch(toggleScreen({screen: 'resetDialog'}))}>

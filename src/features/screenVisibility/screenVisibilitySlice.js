@@ -5,6 +5,7 @@ export const screenVisibility = createSlice({
     initialState: {
         createMonster: false,
         editMonster: false,
+        faq: false,
         resetDialog: false
     },
     reducers: {
