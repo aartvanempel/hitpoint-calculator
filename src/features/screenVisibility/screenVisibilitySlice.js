@@ -4,7 +4,8 @@ export const screenVisibility = createSlice({
     name: 'screenVisibility',
     initialState: {
         createMonster: false,
-        editMonster: false
+        editMonster: false,
+        resetDialog: false
     },
     reducers: {
         toggleScreen: (state, action) => {

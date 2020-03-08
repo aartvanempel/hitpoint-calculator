@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import { useDispatch } from 'react-redux';
-import { reset } from '../monsters/monsterSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectMonsters } from '../monsters/monsterSlice'
+import { toggleScreen } from '../screenVisibility/screenVisibilitySlice'
 
 export default () => {
     const dispatch = useDispatch();
+    const monsters = useSelector(selectMonsters)
 
     return (
         <header className={styles.container}>
@@ -15,8 +17,8 @@ export default () => {
                 <div>
                     <span>faq</span>
                 </div>
-                <div>
-                    <span onClick={() => dispatch(reset())}>reset</span>
+                <div onClick={() => monsters.length && dispatch(toggleScreen({screen: 'resetDialog'}))}>
+                    <span>reset</span>
                 </div>
             </div>
         </header>

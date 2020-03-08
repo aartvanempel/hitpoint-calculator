@@ -5,6 +5,7 @@ import Header from './features/header/Header';
 import AddButton from './features/addButton/AddButton';
 import CreateMonster from './features/monsters/CreateMonster';
 import EditMonster from './features/monsters/EditMonster';
+import ResetDialog from './features/resetDialog/ResetDialog';
 import MonstersList from './features/monsters/MonsterList';
 import styles from './App.module.scss';
 
@@ -13,6 +14,7 @@ import { selectScreenVisibility } from './features/screenVisibility/screenVisibi
 export default () => {
   const showCreateMonster = useSelector(selectScreenVisibility).createMonster
   const showEditMonster = useSelector(selectScreenVisibility).editMonster
+  const showResetDialog = useSelector(selectScreenVisibility).resetDialog
   const [monsterToEdit, setMonsterToEdit] = useState({})
   const screenTransistion = {
     from: { opacity: 0, transform: 'translateY(-50%)' },
@@ -21,6 +23,7 @@ export default () => {
   }
   const createTransitions = useTransition(showCreateMonster, null, screenTransistion)
   const editTransitions = useTransition(showEditMonster, null, screenTransistion)
+  const resetTransitions = useTransition(showResetDialog, null, screenTransistion)
 
   const monsterToEditHandler = monster => setMonsterToEdit(monster)
 
@@ -56,6 +59,18 @@ export default () => {
               item && (
                 <animated.div key={key} style={props}>
                   <EditMonster monster={monsterToEdit} />
+                </animated.div>
+              )
+            )
+          }
+        </div>
+
+        <div className={`${styles.overlay} ${showResetDialog ? styles.showOverlay : ''}`}>
+          {
+            resetTransitions.map(({ item, key, props }) =>
+              item && (
+                <animated.div key={key} style={props}>
+                  <ResetDialog />
                 </animated.div>
               )
             )
