@@ -20,7 +20,6 @@ export const monsters = createSlice({
             state.monsters = []
         },
         editMonster: (state, action) => {
-            console.log('yo')
             const monster = findMonsterById(state, action.payload.id)
 
             Object.assign(monster, {
