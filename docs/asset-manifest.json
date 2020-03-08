@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/hitpoint-calculator/static/css/main.bcc5ad21.chunk.css",
-    "main.js": "/hitpoint-calculator/static/js/main.b1844037.chunk.js",
-    "main.js.map": "/hitpoint-calculator/static/js/main.b1844037.chunk.js.map",
+    "main.css": "/hitpoint-calculator/static/css/main.eaced22c.chunk.css",
+    "main.js": "/hitpoint-calculator/static/js/main.aaff6086.chunk.js",
+    "main.js.map": "/hitpoint-calculator/static/js/main.aaff6086.chunk.js.map",
     "runtime-main.js": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js",
     "runtime-main.js.map": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js.map",
-    "static/js/2.e99894c3.chunk.js": "/hitpoint-calculator/static/js/2.e99894c3.chunk.js",
-    "static/js/2.e99894c3.chunk.js.map": "/hitpoint-calculator/static/js/2.e99894c3.chunk.js.map",
+    "static/js/2.b8653552.chunk.js": "/hitpoint-calculator/static/js/2.b8653552.chunk.js",
+    "static/js/2.b8653552.chunk.js.map": "/hitpoint-calculator/static/js/2.b8653552.chunk.js.map",
     "index.html": "/hitpoint-calculator/index.html",
-    "precache-manifest.b4453e51c48cf2b53b7efc38b1f321ad.js": "/hitpoint-calculator/precache-manifest.b4453e51c48cf2b53b7efc38b1f321ad.js",
+    "precache-manifest.d407af04043c42fbb86afa0b73dda699.js": "/hitpoint-calculator/precache-manifest.d407af04043c42fbb86afa0b73dda699.js",
     "service-worker.js": "/hitpoint-calculator/service-worker.js",
-    "static/css/main.bcc5ad21.chunk.css.map": "/hitpoint-calculator/static/css/main.bcc5ad21.chunk.css.map",
-    "static/js/2.e99894c3.chunk.js.LICENSE.txt": "/hitpoint-calculator/static/js/2.e99894c3.chunk.js.LICENSE.txt"
+    "static/css/main.eaced22c.chunk.css.map": "/hitpoint-calculator/static/css/main.eaced22c.chunk.css.map",
+    "static/js/2.b8653552.chunk.js.LICENSE.txt": "/hitpoint-calculator/static/js/2.b8653552.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.14e136bd.js",
-    "static/js/2.e99894c3.chunk.js",
-    "static/css/main.bcc5ad21.chunk.css",
-    "static/js/main.b1844037.chunk.js"
+    "static/js/2.b8653552.chunk.js",
+    "static/css/main.eaced22c.chunk.css",
+    "static/js/main.aaff6086.chunk.js"
   ]
 }
