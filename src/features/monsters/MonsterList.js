@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 import { selectMonsters } from './monsterSlice'
 import styles from './MonsterList.module.scss'
 
-export default () => {
+export default ({monsterToEditHandler}) => {
     const monsters = useSelector(selectMonsters)
 
     const transitions = useTransition(monsters, monster => monster.id, {
@@ -22,7 +22,7 @@ export default () => {
             {
                 transitions.map(({ item, props, key }) => (
                     <animated.div key={key} style={props}>
-                        <Monster monster={item} />
+                        <Monster monster={item} monsterToEditHandler={monsterToEditHandler}/>
                     </animated.div>
                 ))
 

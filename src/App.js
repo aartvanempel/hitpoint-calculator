@@ -1,18 +1,29 @@
 import React, { useState } from 'react';
 import { useTransition, animated } from 'react-spring';
+import { useSelector } from 'react-redux'
 import Header from './features/header/Header';
 import AddButton from './features/addButton/AddButton';
 import CreateMonster from './features/monsters/CreateMonster';
+import EditMonster from './features/monsters/EditMonster';
 import MonstersList from './features/monsters/MonsterList';
 import styles from './App.module.scss';
 
+import { selectScreenVisibility } from './features/screenVisibility/screenVisibilitySlice'
+
 export default () => {
+  const showCreateMonster = useSelector(selectScreenVisibility).createMonster
+  const showEditMonster = useSelector(selectScreenVisibility).editMonster
+  const [monsterToEdit, setMonsterToEdit] = useState({})
 
-  const [showCreateMonster, setShowCreateMonster] = useState(false)
+  const monsterToEditHandler = monster => setMonsterToEdit(monster)
 
-  const showCreateMonsterHandler = value => setShowCreateMonster(value)
+  const createTransitions = useTransition(showCreateMonster, null, {
+    from: { opacity: 0, transform: 'translateY(-50%)' },
+    enter: { opacity: 1, transform: 'translateY(0px)' },
+    leave: { opacity: 0, transform: 'translateY(50%)' },
+  })
 
-  const transitions = useTransition(showCreateMonster, null, {
+  const editTransitions = useTransition(showEditMonster, null, {
     from: { opacity: 0, transform: 'translateY(-50%)' },
     enter: { opacity: 1, transform: 'translateY(0px)' },
     leave: { opacity: 0, transform: 'translateY(50%)' },
@@ -24,19 +35,31 @@ export default () => {
       <Header />
 
       <div>
-        <MonstersList />
+        <MonstersList monsterToEditHandler={monsterToEditHandler} />
       </div>
 
       <div className={styles.bottomContainer}>
-        <AddButton showCreateMonsterHandler={showCreateMonsterHandler} />
+        <AddButton />
       </div>
 
-      <div className={`${styles.overlay} ${showCreateMonster && styles.showOverlay}`}>
+      <div className={`${styles.overlay} ${showCreateMonster ? styles.showOverlay : ''}`}>
         {
-          transitions.map(({ item, key, props }) =>
+          createTransitions.map(({ item, key, props }) =>
             item && (
               <animated.div key={key} style={props}>
-                <CreateMonster showCreateMonsterHandler={showCreateMonsterHandler} />
+                <CreateMonster />
+              </animated.div>
+            )
+          )
+        }
+      </div>
+
+      <div className={`${styles.overlay} ${showEditMonster ? styles.showOverlay : ''}`}>
+        {
+          editTransitions.map(({ item, key, props }) =>
+            item && (
+              <animated.div key={key} style={props}>
+                <EditMonster monster={monsterToEdit} />
               </animated.div>
             )
           )

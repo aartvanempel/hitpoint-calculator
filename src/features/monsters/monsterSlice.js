@@ -19,6 +19,16 @@ export const monsters = createSlice({
         reset: state => {
             state.monsters = []
         },
+        editMonster: (state, action) => {
+            console.log('yo')
+            const monster = findMonsterById(state, action.payload.id)
+
+            Object.assign(monster, {
+                name: action.payload.name,
+                maxHp: action.payload.maxHp,
+                color: action.payload.color
+            })
+        },
         createMonster: (state, action) => {
             action.payload.id = new Date().getTime()
             action.payload.currentHp = Number(action.payload.maxHp)
@@ -56,6 +66,7 @@ export const monsters = createSlice({
 export const selectMonsters = state => state.monsters.monsters;
 export const {
     reset,
+    editMonster,
     createMonster,
     deleteMonster,
     decrement,

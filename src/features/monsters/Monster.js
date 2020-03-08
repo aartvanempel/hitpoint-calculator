@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useDebouncedCallback } from 'use-debounce';
 import styles from './Monster.module.scss'
+import { toggleScreen } from '../screenVisibility/screenVisibilitySlice'
 import {
     decrement,
     decrementByAmount,
@@ -9,7 +10,7 @@ import {
     incrementByAmount
 } from './monsterSlice';
 
-export default ({ monster }) => {
+export default ({ monster, monsterToEditHandler }) => {
     const [hpDiff, setHpDiff] = useState(0)
     const [value, setValue] = useState(0)
     const [showHpDiff, setShowHpDiff] = useState(false)
@@ -28,7 +29,12 @@ export default ({ monster }) => {
             <div className={styles.infoContainer}>
                 <div className={styles.nameContainer}>
                     <span style={{ backgroundColor: monster.color }} />
-                    <h2>{monster.name}</h2>
+                    <h2 onClick={() => {
+                        monsterToEditHandler(monster)
+                        dispatch(toggleScreen({screen: 'editMonster'}))
+                    }}>
+                        {monster.name}
+                    </h2>
                 </div>
                 <div className={styles.hpContainer}>
                     {

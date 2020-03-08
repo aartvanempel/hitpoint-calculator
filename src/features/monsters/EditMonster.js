@@ -1,34 +1,24 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { createMonster, selectMonsters } from './monsterSlice';
-import { toggleScreen } from '../screenVisibility/screenVisibilitySlice';
+import { useDispatch } from 'react-redux';
+import { editMonster } from './monsterSlice';
+import { toggleScreen } from '../screenVisibility/screenVisibilitySlice'
 import styles from './CreateMonster.module.scss';
 
-export default () => {
+export default ({monster}) => {
     const dispatch = useDispatch();
-    const monsters = useSelector(selectMonsters)
-
     const colors = ['#E74C3C', '#3498DB', '#E67E22', '#2ECC71', '#9B59B6', '#1ABC9C', '#F1C40F']
 
-    let initialSelectedColor = colors[0]
-    if (monsters.length) {
-        const lastUsedColor = monsters[monsters.length - 1].color
-        const lastUsedColorIndex = colors.findIndex(color => color === lastUsedColor)
-
-        initialSelectedColor = (lastUsedColorIndex < colors.length - 1) ? colors[lastUsedColorIndex + 1] : colors[0]
-    }
-
-    const [name, setName] = useState('');
-    const [maxHp, setMaxHp] = useState('')
-    const [color, setColor] = useState(initialSelectedColor)
+    const [name, setName] = useState(monster.name);
+    const [maxHp, setMaxHp] = useState(monster.maxHp)
+    const [color, setColor] = useState(monster.color)
 
     const onSubmitHandler = e => {
         e.preventDefault()
 
         if (!name.length || !maxHp || !color.length) return
 
-        dispatch(createMonster({ name, maxHp, color }))
-        dispatch(toggleScreen({screen: 'createMonster'}))
+        dispatch(editMonster({ id: monster.id, name, maxHp, color }))
+        dispatch(toggleScreen({screen: 'editMonster'}))
     };
 
     return (
@@ -36,12 +26,12 @@ export default () => {
             <div className={styles.titleContainer}>
                 <div>
                     <h1>
-                        New monster
+                        Edit monster
                     </h1>
                 </div>
                 <div>
                     <button
-                        onClick={() => dispatch(toggleScreen({screen: 'createMonster'}))}
+                        onClick={() => dispatch(toggleScreen({screen: 'editMonster'}))}
                         className={styles.button}
                     >
                         close
