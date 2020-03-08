@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { editMonster } from './monsterSlice';
+import { editMonster, deleteMonster } from './monsterSlice';
 import { toggleScreen } from '../screenVisibility/screenVisibilitySlice'
 import styles from './CreateMonster.module.scss';
 
@@ -31,10 +31,13 @@ export default ({monster}) => {
                 </div>
                 <div>
                     <button
-                        onClick={() => dispatch(toggleScreen({screen: 'editMonster'}))}
-                        className={styles.button}
+                        onClick={() => {
+                            dispatch(deleteMonster({id: monster.id}))
+                            dispatch(toggleScreen({screen: 'editMonster'}))
+                        }}
+                        className={styles.deleteButton}
                     >
-                        close
+                        delete
                     </button>
                 </div>
             </div>

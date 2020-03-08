@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
     .nameContainer {
         display: flex;
@@ -52,7 +53,6 @@
             font-size: 16px;
             color: #34495E;
             text-transform: capitalize;
-            cursor: pointer;
         }
     }
 

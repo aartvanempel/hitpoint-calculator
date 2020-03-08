@@ -75,7 +75,14 @@
     font-size: 14px;
     color: #34495E;
     border-radius: 4px;
+    background-color: #EAECEE;
     cursor: pointer;
+}
+
+.deleteButton {
+    composes: button;
+    background-color: #E74C3C;
+    color: #fff;
 }
 
 .radioContainer {

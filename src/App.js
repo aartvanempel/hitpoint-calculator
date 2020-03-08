@@ -30,42 +30,45 @@ export default () => {
   })
 
   return (
-    <div className={styles.container}>
-
+    <div>
       <Header />
 
-      <div>
-        <MonstersList monsterToEditHandler={monsterToEditHandler} />
-      </div>
+      <div className={styles.container}>
 
-      <div className={styles.bottomContainer}>
-        <AddButton />
-      </div>
+        <div>
+          <MonstersList monsterToEditHandler={monsterToEditHandler} />
+        </div>
 
-      <div className={`${styles.overlay} ${showCreateMonster ? styles.showOverlay : ''}`}>
-        {
-          createTransitions.map(({ item, key, props }) =>
-            item && (
-              <animated.div key={key} style={props}>
-                <CreateMonster />
-              </animated.div>
+        <div className={styles.bottomContainer}>
+          <AddButton />
+        </div>
+
+        <div className={`${styles.overlay} ${showCreateMonster ? styles.showOverlay : ''}`}>
+          {
+            createTransitions.map(({ item, key, props }) =>
+              item && (
+                <animated.div key={key} style={props}>
+                  <CreateMonster />
+                </animated.div>
+              )
             )
-          )
-        }
-      </div>
+          }
+        </div>
 
-      <div className={`${styles.overlay} ${showEditMonster ? styles.showOverlay : ''}`}>
-        {
-          editTransitions.map(({ item, key, props }) =>
-            item && (
-              <animated.div key={key} style={props}>
-                <EditMonster monster={monsterToEdit} />
-              </animated.div>
+        <div className={`${styles.overlay} ${showEditMonster ? styles.showOverlay : ''}`}>
+          {
+            editTransitions.map(({ item, key, props }) =>
+              item && (
+                <animated.div key={key} style={props}>
+                  <EditMonster monster={monsterToEdit} />
+                </animated.div>
+              )
             )
-          )
-        }
-      </div>
+          }
+        </div>
 
+      </div>
     </div>
+
   )
 }

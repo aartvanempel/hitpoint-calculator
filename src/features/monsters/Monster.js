@@ -26,13 +26,16 @@ export default ({ monster, monsterToEditHandler }) => {
 
     return (
         <div className={isDead ? styles.isDead : styles.container}>
-            <div className={styles.infoContainer}>
+            <div
+                className={styles.infoContainer}
+                onClick={() => {
+                    monsterToEditHandler(monster)
+                    dispatch(toggleScreen({ screen: 'editMonster' }))
+                }}
+            >
                 <div className={styles.nameContainer}>
                     <span style={{ backgroundColor: monster.color }} />
-                    <h2 onClick={() => {
-                        monsterToEditHandler(monster)
-                        dispatch(toggleScreen({screen: 'editMonster'}))
-                    }}>
+                    <h2>
                         {monster.name}
                     </h2>
                 </div>
