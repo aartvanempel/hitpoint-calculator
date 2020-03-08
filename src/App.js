@@ -14,20 +14,15 @@ export default () => {
   const showCreateMonster = useSelector(selectScreenVisibility).createMonster
   const showEditMonster = useSelector(selectScreenVisibility).editMonster
   const [monsterToEdit, setMonsterToEdit] = useState({})
+  const screenTransistion = {
+    from: { opacity: 0, transform: 'translateY(-50%)' },
+    enter: { opacity: 1, transform: 'translateY(0px)' },
+    leave: { opacity: 0, transform: 'translateY(50%)' },
+  }
+  const createTransitions = useTransition(showCreateMonster, null, screenTransistion)
+  const editTransitions = useTransition(showEditMonster, null, screenTransistion)
 
   const monsterToEditHandler = monster => setMonsterToEdit(monster)
-
-  const createTransitions = useTransition(showCreateMonster, null, {
-    from: { opacity: 0, transform: 'translateY(-50%)' },
-    enter: { opacity: 1, transform: 'translateY(0px)' },
-    leave: { opacity: 0, transform: 'translateY(50%)' },
-  })
-
-  const editTransitions = useTransition(showEditMonster, null, {
-    from: { opacity: 0, transform: 'translateY(-50%)' },
-    enter: { opacity: 1, transform: 'translateY(0px)' },
-    leave: { opacity: 0, transform: 'translateY(50%)' },
-  })
 
   return (
     <div>
