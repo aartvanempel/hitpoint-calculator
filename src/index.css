@@ -4,4 +4,9 @@ body {
 
 * {
   font-family: 'Merriweather', serif;
+  outline: none;
+}
+
+*:focus {
+  outline: none;
 }
