@@ -11,7 +11,9 @@ export default () => {
     return (
         <header className={styles.container}>
             <div>
-                <h1>Hitpoint Calculator</h1>
+                <h1>
+                    Hitpoint Calculator
+                </h1>
             </div>
             <div className={styles.linkContainer}>
                 <div onClick={() => dispatch(toggleScreen({screen: 'faq'}))}>

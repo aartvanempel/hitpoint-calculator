@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.module.scss';
+import "./fontawesome/css/all.css";
 import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';

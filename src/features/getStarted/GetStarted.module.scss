@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 126px;
+        height: 126px;
+        background-color: #fafafa;
+        border: solid 2px #CDD9E4;
+        border-radius: 50%;
+    }
+
+    i {
+        font-size: 32px;
+        color: #34495E;
+    }
+}

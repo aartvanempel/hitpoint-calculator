@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { useSelector } from 'react-redux'
+import { selectMonsters } from './features/monsters/monsterSlice'
 import Header from './features/header/Header';
 import AddButton from './features/addButton/AddButton';
 import CreateMonster from './features/monsters/CreateMonster';
@@ -8,11 +9,13 @@ import EditMonster from './features/monsters/EditMonster';
 import Faq from './features/faq/Faq'
 import ResetDialog from './features/resetDialog/ResetDialog';
 import MonstersList from './features/monsters/MonsterList';
+import GetStarted from './features/getStarted/GetStarted';
 import styles from './App.module.scss';
 
 import { selectScreenVisibility } from './features/screenVisibility/screenVisibilitySlice'
 
 export default () => {
+  const monsters = useSelector(selectMonsters)
   const showCreateMonster = useSelector(selectScreenVisibility).createMonster
   const showEditMonster = useSelector(selectScreenVisibility).editMonster
   const showFaq = useSelector(selectScreenVisibility).faq
@@ -35,6 +38,8 @@ export default () => {
       <Header />
 
       <div className={styles.container}>
+
+        { !monsters.length && <GetStarted /> }
 
         <div>
           <MonstersList monsterToEditHandler={monsterToEditHandler} />

@@ -5,15 +5,7 @@ const findMonsterById = (state, id) => state.monsters.find(monster => monster.id
 export const monsters = createSlice({
     name: 'monsters',
     initialState: {
-        monsters: [
-            {
-                id: 0,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            }
-        ],
+        monsters: [],
     },
     reducers: {
         reset: state => {
