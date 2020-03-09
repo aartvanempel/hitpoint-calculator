@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "02277653fb15fc6f9a3289e69e47c46d",
+    "revision": "cffae2b5f824e2d850f3b269fc2a69eb",
     "url": "/hitpoint-calculator/index.html"
   },
   {
-    "revision": "4959690397171b6eb97f",
-    "url": "/hitpoint-calculator/static/css/main.604435ef.chunk.css"
+    "revision": "1ae2358990acc206dcb4",
+    "url": "/hitpoint-calculator/static/css/main.eed67a55.chunk.css"
   },
   {
     "revision": "138c18f43cff72b189f0",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hitpoint-calculator/static/js/2.229dee00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4959690397171b6eb97f",
+    "revision": "1ae2358990acc206dcb4",
     "url": "/hitpoint-calculator/static/js/main.3cf520a3.chunk.js"
   },
   {
