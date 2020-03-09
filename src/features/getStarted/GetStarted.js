@@ -7,6 +7,7 @@ export default () => {
             <div>
                 <i className="far fa-dragon"></i>
             </div>
+            <p>Add some monsters to get started</p>
         </div>
     )
 }

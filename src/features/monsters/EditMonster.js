@@ -4,7 +4,7 @@ import { editMonster, deleteMonster } from './monsterSlice';
 import { toggleScreen } from '../screenVisibility/screenVisibilitySlice'
 import styles from './CreateMonster.module.scss';
 
-export default ({monster}) => {
+export default ({ monster }) => {
     const dispatch = useDispatch();
     const colors = ['#E74C3C', '#3498DB', '#E67E22', '#2ECC71', '#9B59B6', '#1ABC9C', '#F1C40F']
 
@@ -18,7 +18,7 @@ export default ({monster}) => {
         if (!name.length || !maxHp || !color.length) return
 
         dispatch(editMonster({ id: monster.id, name, maxHp, color }))
-        dispatch(toggleScreen({screen: 'editMonster'}))
+        dispatch(toggleScreen({ screen: 'editMonster' }))
     };
 
     return (
@@ -32,12 +32,12 @@ export default ({monster}) => {
                 <div>
                     <button
                         onClick={() => {
-                            dispatch(deleteMonster({id: monster.id}))
-                            dispatch(toggleScreen({screen: 'editMonster'}))
+                            dispatch(deleteMonster({ id: monster.id }))
+                            dispatch(toggleScreen({ screen: 'editMonster' }))
                         }}
                         className={styles.deleteButton}
                     >
-                        delete
+                        <i class="far fa-trash-alt"></i>
                     </button>
                 </div>
             </div>
@@ -82,7 +82,7 @@ export default ({monster}) => {
 
                     <div className={styles.submitContainer}>
                         <button type='submit' className={styles.submitButton}>
-                            ✓ Done
+                            <i class="far fa-check"></i> Done
                         </button>
                     </div>
                 </form>

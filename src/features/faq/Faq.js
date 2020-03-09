@@ -13,8 +13,8 @@ export default () => {
                     <h1>F.A.Q.</h1>
                 </div>
                 <div>
-                    <button onClick={() => dispatch(toggleScreen({screen: 'faq'}))}>
-                        close
+                    <button onClick={() => dispatch(toggleScreen({ screen: 'faq' }))}>
+                        <i class="far fa-times"></i>
                     </button>
                 </div>
             </div>

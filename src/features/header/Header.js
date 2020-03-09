@@ -12,15 +12,16 @@ export default () => {
         <header className={styles.container}>
             <div>
                 <h1>
+                    <i class="fad fa-flask-potion"></i>
                     Hitpoint Calculator
                 </h1>
             </div>
             <div className={styles.linkContainer}>
-                <div onClick={() => dispatch(toggleScreen({screen: 'faq'}))}>
-                    <span>faq</span>
+                <div onClick={() => dispatch(toggleScreen({ screen: 'faq' }))}>
+                    <i class="far fa-question"></i>
                 </div>
-                <div onClick={() => monsters.length && dispatch(toggleScreen({screen: 'resetDialog'}))}>
-                    <span>reset</span>
+                <div onClick={() => monsters.length && dispatch(toggleScreen({ screen: 'resetDialog' }))}>
+                    <i class="far fa-redo-alt"></i>
                 </div>
             </div>
         </header>

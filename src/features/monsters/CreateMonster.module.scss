@@ -65,24 +65,24 @@
         border-radius: 4px;
         border: none;
         cursor: pointer;
+
+        i {
+            margin-right: 4px;
+            font-size: 16px;
+        }
     }
 }
 
-.button {
+.deleteButton {
     padding: 4px 8px;
     border: none;
-    text-decoration: none;
-    font-size: 14px;
-    color: #34495E;
-    border-radius: 4px;
-    background-color: #EAECEE;
+    background: none;
     cursor: pointer;
-}
 
-.deleteButton {
-    composes: button;
-    background-color: #E74C3C;
-    color: #fff;
+    i {
+        color: #34495E;
+        font-size: 16px;
+    }
 }
 
 .radioContainer {

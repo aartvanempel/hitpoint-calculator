@@ -28,7 +28,7 @@ export default () => {
         if (!name.length || !maxHp || !color.length) return
 
         dispatch(createMonster({ name, maxHp, color }))
-        dispatch(toggleScreen({screen: 'createMonster'}))
+        dispatch(toggleScreen({ screen: 'createMonster' }))
     };
 
     return (
@@ -41,10 +41,10 @@ export default () => {
                 </div>
                 <div>
                     <button
-                        onClick={() => dispatch(toggleScreen({screen: 'createMonster'}))}
-                        className={styles.button}
+                        onClick={() => dispatch(toggleScreen({ screen: 'createMonster' }))}
+                        className={styles.deleteButton}
                     >
-                        close
+                        <i class="far fa-trash-alt"></i>
                     </button>
                 </div>
             </div>
@@ -90,7 +90,7 @@ export default () => {
 
                     <div className={styles.submitContainer}>
                         <button type='submit' className={styles.submitButton}>
-                            ✓ Done
+                            <i class="far fa-check"></i> Done
                         </button>
                     </div>
                 </form>

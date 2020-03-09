@@ -5,8 +5,44 @@
 }
 
 .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 32px;
     text-align: center;
+
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 126px;
+        height: 126px;
+        margin-bottom: 24px;
+        background-color: #fafafa;
+        border: solid 2px #CDD9E4;
+        border-radius: 50%;
+
+        i {
+            position: relative;
+            font-size: 32px;
+            color: #34495E;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 55%;
+                left: 55%;
+                display: block;
+                transform: rotate(40deg) translate(-50%, -50%);
+                transform-origin: top left;
+                width: 54px;
+                height: 3px;
+                background-color: #85929F;
+                outline: 3px solid #fafafa;
+            }
+        }
+    }
 
     h1 {
         margin: 0;
@@ -41,6 +77,11 @@
         border-radius: 12px;
         border: 2px solid #34495E;
         cursor: pointer;
+
+        i {
+            margin-right: 12px;
+            font-size: 16px;
+        }
     }
 
     .cancelButton {
@@ -50,6 +91,10 @@
             background-color: #EAECEE;
             border: 2px solid #34495E;
             color: #34495E;
+
+            i {
+                font-size: 18px;
+            }
         }
     }
 

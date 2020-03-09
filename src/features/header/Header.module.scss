@@ -11,6 +11,14 @@
         margin: 0;
         font-size: 16px;
         font-weight: 700;
+
+        i {
+            --fa-primary-color: #34495E;
+            --fa-secondary-color: #E74C3C;
+            --fa-secondary-opacity: 1.0;
+            margin-right: 8px;
+            font-size: 16px;
+        }
     }
 }
 
@@ -21,7 +29,12 @@
         margin-left: 32px;
     }
 
-    span {
+    div {
         cursor: pointer;
+    }
+
+    i {
+        font-size: 18px;
+        color: #34495E;
     }
 }

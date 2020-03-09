@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 200px);
@@ -13,10 +14,16 @@
         background-color: #fafafa;
         border: solid 2px #CDD9E4;
         border-radius: 50%;
+
+        i {
+            font-size: 32px;
+            color: #34495E;
+        }
     }
 
-    i {
-        font-size: 32px;
-        color: #34495E;
+    p {
+        margin: 0;
+        margin-top: 32px;
+        color: #85929F;
     }
 }
