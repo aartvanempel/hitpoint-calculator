@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8e7f15de4a4c197db19c0fc916c4b41",
+    "revision": "0f5c093ed156cbdaee810bab102abdf6",
     "url": "/hitpoint-calculator/index.html"
   },
   {
-    "revision": "e04fd9c19e72fd8056a8",
-    "url": "/hitpoint-calculator/static/css/main.971bb2a2.chunk.css"
+    "revision": "3ebdf4b983c6837e0b31",
+    "url": "/hitpoint-calculator/static/css/main.974a9472.chunk.css"
   },
   {
-    "revision": "138c18f43cff72b189f0",
-    "url": "/hitpoint-calculator/static/js/2.229dee00.chunk.js"
+    "revision": "a319a36bd35db9830231",
+    "url": "/hitpoint-calculator/static/js/2.da9e98e6.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/hitpoint-calculator/static/js/2.229dee00.chunk.js.LICENSE.txt"
+    "url": "/hitpoint-calculator/static/js/2.da9e98e6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e04fd9c19e72fd8056a8",
-    "url": "/hitpoint-calculator/static/js/main.d3382c69.chunk.js"
+    "revision": "3ebdf4b983c6837e0b31",
+    "url": "/hitpoint-calculator/static/js/main.894e2b15.chunk.js"
   },
   {
     "revision": "dabff4e44b3652c4d033",

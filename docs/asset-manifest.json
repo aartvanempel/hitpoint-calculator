@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hitpoint-calculator/static/css/main.971bb2a2.chunk.css",
-    "main.js": "/hitpoint-calculator/static/js/main.d3382c69.chunk.js",
-    "main.js.map": "/hitpoint-calculator/static/js/main.d3382c69.chunk.js.map",
+    "main.css": "/hitpoint-calculator/static/css/main.974a9472.chunk.css",
+    "main.js": "/hitpoint-calculator/static/js/main.894e2b15.chunk.js",
+    "main.js.map": "/hitpoint-calculator/static/js/main.894e2b15.chunk.js.map",
     "runtime-main.js": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js",
     "runtime-main.js.map": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js.map",
-    "static/js/2.229dee00.chunk.js": "/hitpoint-calculator/static/js/2.229dee00.chunk.js",
-    "static/js/2.229dee00.chunk.js.map": "/hitpoint-calculator/static/js/2.229dee00.chunk.js.map",
+    "static/js/2.da9e98e6.chunk.js": "/hitpoint-calculator/static/js/2.da9e98e6.chunk.js",
+    "static/js/2.da9e98e6.chunk.js.map": "/hitpoint-calculator/static/js/2.da9e98e6.chunk.js.map",
     "index.html": "/hitpoint-calculator/index.html",
-    "precache-manifest.5e44360dcfcdac7f48635e812daad7cc.js": "/hitpoint-calculator/precache-manifest.5e44360dcfcdac7f48635e812daad7cc.js",
+    "precache-manifest.75d990d45c97217a7a2f3943fbdafc63.js": "/hitpoint-calculator/precache-manifest.75d990d45c97217a7a2f3943fbdafc63.js",
     "service-worker.js": "/hitpoint-calculator/service-worker.js",
-    "static/css/main.971bb2a2.chunk.css.map": "/hitpoint-calculator/static/css/main.971bb2a2.chunk.css.map",
-    "static/js/2.229dee00.chunk.js.LICENSE.txt": "/hitpoint-calculator/static/js/2.229dee00.chunk.js.LICENSE.txt",
+    "static/css/main.974a9472.chunk.css.map": "/hitpoint-calculator/static/css/main.974a9472.chunk.css.map",
+    "static/js/2.da9e98e6.chunk.js.LICENSE.txt": "/hitpoint-calculator/static/js/2.da9e98e6.chunk.js.LICENSE.txt",
     "static/media/all.css": "/hitpoint-calculator/static/media/fa-solid-900.e245d7d6.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.14e136bd.js",
-    "static/js/2.229dee00.chunk.js",
-    "static/css/main.971bb2a2.chunk.css",
-    "static/js/main.d3382c69.chunk.js"
+    "static/js/2.da9e98e6.chunk.js",
+    "static/css/main.974a9472.chunk.css",
+    "static/js/main.894e2b15.chunk.js"
   ]
 }
