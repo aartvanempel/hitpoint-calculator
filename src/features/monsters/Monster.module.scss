@@ -95,6 +95,11 @@
         background-color: #EAECEE;
         cursor: pointer;
         touch-action: manipulation;
+        transition: opacity 150ms ease-in-out;
+
+        &:active {
+            opacity: .6;
+        }
     }
 }
 
