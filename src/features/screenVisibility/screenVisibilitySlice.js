@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const screenVisibility = createSlice({
     name: 'screenVisibility',
     initialState: {
-        createMonster: false,
+        createMonster: true,
         editMonster: false,
         faq: false,
         resetDialog: false
