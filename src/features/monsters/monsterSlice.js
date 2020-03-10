@@ -6,13 +6,13 @@ export const monsters = createSlice({
     name: 'monsters',
     initialState: {
         monsters: [
-            {
-                id: 0,
-                name: 'Goblin #1',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            }
+            // {
+            //     id: 0,
+            //     name: 'Goblin #1',
+            //     currentHp: 12,
+            //     maxHp: 50,
+            //     color: '#E74C3C'
+            // }
         ],
     },
     reducers: {
