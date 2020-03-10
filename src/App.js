@@ -34,19 +34,16 @@ export default () => {
   const monsterToEditHandler = monster => setMonsterToEdit(monster)
 
   return (
-    <div>
+    <div className={styles.out}>
+
       <Header />
 
       <div className={styles.container}>
 
-        { !monsters.length && <GetStarted /> }
+        {!monsters.length && <GetStarted />}
 
         <div>
           <MonstersList monsterToEditHandler={monsterToEditHandler} />
-        </div>
-
-        <div className={styles.bottomContainer}>
-          <AddButton />
         </div>
 
         <div className={`${styles.overlay} ${showCreateMonster ? styles.showOverlay : ''}`}>
@@ -98,7 +95,11 @@ export default () => {
         </div>
 
       </div>
-    </div>
 
+      <div className={styles.bottomContainer}>
+        <AddButton />
+      </div>
+
+    </div>
   )
 }

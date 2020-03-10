@@ -8,56 +8,7 @@ export const monsters = createSlice({
         monsters: [
             {
                 id: 0,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 1,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 2,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 3,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 4,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 5,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 6,
-                name: 'Goblin',
-                currentHp: 12,
-                maxHp: 50,
-                color: '#E74C3C'
-            },
-            {
-                id: 7,
-                name: 'Goblin',
+                name: 'Goblin #1',
                 currentHp: 12,
                 maxHp: 50,
                 color: '#E74C3C'
