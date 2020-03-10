@@ -44,7 +44,7 @@ export default () => {
                         onClick={() => dispatch(toggleScreen({ screen: 'createMonster' }))}
                         className={styles.deleteButton}
                     >
-                        <i class="far fa-trash-alt"></i>
+                        <i className="far fa-trash-alt"></i>
                     </button>
                 </div>
             </div>
@@ -62,7 +62,7 @@ export default () => {
                     </div>
 
                     <div className={styles.formRow}>
-                        <i class="far fa-flask-potion"></i>
+                        <i className="far fa-flask-potion"></i>
                         <input
                             placeholder="Max HP"
                             inputMode="numeric"
@@ -74,7 +74,7 @@ export default () => {
                     </div>
 
                     <div className={styles.formRow}>
-                        <i class="far fa-palette"></i>
+                        <i className="far fa-palette"></i>
                         <div className={styles.radioContainer}>
                             {
                                 colors.map((colorOption, index) => (
@@ -95,7 +95,7 @@ export default () => {
 
                     <div className={styles.submitContainer}>
                         <button type='submit' className={styles.submitButton}>
-                            <i class="far fa-check"></i> Done
+                            <i className="far fa-check"></i> Done
                         </button>
                     </div>
                 </form>

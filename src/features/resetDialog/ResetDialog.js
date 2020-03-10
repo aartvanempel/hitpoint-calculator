@@ -20,7 +20,7 @@ export default () => {
                 <div className={styles.buttonContainer}>
                     <div className={styles.cancelButton}>
                         <button onClick={() => dispatch(toggleScreen({ screen: 'resetDialog' }))}>
-                            <i class="far fa-times"></i> Cancel
+                            <i className="far fa-times"></i> Cancel
                         </button>
                     </div>
                     <div className={styles.resetButton}>
@@ -28,7 +28,7 @@ export default () => {
                             dispatch(reset())
                             dispatch(toggleScreen({ screen: 'resetDialog' }))
                         }}>
-                            <i class="far fa-redo-alt"></i> Clear list
+                            <i className="far fa-redo-alt"></i> Clear list
                         </button>
                     </div>
                 </div>

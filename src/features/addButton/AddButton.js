@@ -12,7 +12,7 @@ export default () => {
                 onClick={() => dispatch(toggleScreen({screen: 'createMonster'}))}
                 className={styles.button}
             >
-                <i class="fas fa-plus"></i>
+                <i className="far fa-plus"></i>
                 Add monster
             </button>
         </div>

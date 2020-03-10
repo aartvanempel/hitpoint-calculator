@@ -11,7 +11,7 @@ export const screenVisibility = createSlice({
     reducers: {
         toggleScreen: (state, action) => {
             state[action.payload.screen] = !state[action.payload.screen]
-        },
+        }
     },
 });
 

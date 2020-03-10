@@ -14,7 +14,7 @@ export default () => {
                 </div>
                 <div>
                     <button onClick={() => dispatch(toggleScreen({ screen: 'faq' }))}>
-                        <i class="far fa-times"></i>
+                        <i className="far fa-times"></i>
                     </button>
                 </div>
             </div>
