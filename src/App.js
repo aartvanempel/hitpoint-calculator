@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring';
 import { useSelector } from 'react-redux'
 import { selectMonsters } from './features/monsters/monsterSlice'
@@ -32,6 +32,10 @@ export default () => {
   const faqTransitions = useTransition(showFaq, null, screenTransistion)
 
   const monsterToEditHandler = monster => setMonsterToEdit(monster)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <div className={styles.out}>
