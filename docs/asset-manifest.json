@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hitpoint-calculator/static/css/main.27c699dd.chunk.css",
-    "main.js": "/hitpoint-calculator/static/js/main.5cffdd18.chunk.js",
-    "main.js.map": "/hitpoint-calculator/static/js/main.5cffdd18.chunk.js.map",
+    "main.css": "/hitpoint-calculator/static/css/main.a4bca911.chunk.css",
+    "main.js": "/hitpoint-calculator/static/js/main.37f42f0d.chunk.js",
+    "main.js.map": "/hitpoint-calculator/static/js/main.37f42f0d.chunk.js.map",
     "runtime-main.js": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js",
     "runtime-main.js.map": "/hitpoint-calculator/static/js/runtime-main.14e136bd.js.map",
     "static/js/2.229dee00.chunk.js": "/hitpoint-calculator/static/js/2.229dee00.chunk.js",
     "static/js/2.229dee00.chunk.js.map": "/hitpoint-calculator/static/js/2.229dee00.chunk.js.map",
     "index.html": "/hitpoint-calculator/index.html",
-    "precache-manifest.b1c3668a960bea49de4de85c0e2ec23b.js": "/hitpoint-calculator/precache-manifest.b1c3668a960bea49de4de85c0e2ec23b.js",
+    "precache-manifest.35668203bbdae8db47378819045c2aac.js": "/hitpoint-calculator/precache-manifest.35668203bbdae8db47378819045c2aac.js",
     "service-worker.js": "/hitpoint-calculator/service-worker.js",
-    "static/css/main.27c699dd.chunk.css.map": "/hitpoint-calculator/static/css/main.27c699dd.chunk.css.map",
+    "static/css/main.a4bca911.chunk.css.map": "/hitpoint-calculator/static/css/main.a4bca911.chunk.css.map",
     "static/js/2.229dee00.chunk.js.LICENSE.txt": "/hitpoint-calculator/static/js/2.229dee00.chunk.js.LICENSE.txt",
     "static/media/all.css": "/hitpoint-calculator/static/media/fa-solid-900.e245d7d6.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.14e136bd.js",
     "static/js/2.229dee00.chunk.js",
-    "static/css/main.27c699dd.chunk.css",
-    "static/js/main.5cffdd18.chunk.js"
+    "static/css/main.a4bca911.chunk.css",
+    "static/js/main.37f42f0d.chunk.js"
   ]
 }
