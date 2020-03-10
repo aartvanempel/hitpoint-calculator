@@ -44,6 +44,7 @@ export default ({ monster }) => {
             <div>
                 <form onSubmit={e => onSubmitHandler(e)}>
                     <div className={styles.formRow}>
+                        <i className="far fa-dragon"></i>
                         <input
                             placeholder="Monster's name"
                             type='text'
@@ -53,6 +54,7 @@ export default ({ monster }) => {
                     </div>
 
                     <div className={styles.formRow}>
+                        <i class="far fa-flask-potion"></i>
                         <input
                             placeholder="Max HP"
                             inputMode="numeric"
@@ -63,21 +65,24 @@ export default ({ monster }) => {
                         />
                     </div>
 
-                    <div className={`${styles.formRow} ${styles.radioContainer}`}>
-                        {
-                            colors.map((colorOption, index) => (
-                                <div key={index}>
-                                    <label className={styles.label}>
-                                        <input
-                                            type='radio'
-                                            checked={color === colorOption}
-                                            onChange={() => setColor(colorOption)}
-                                        />
-                                        <span className={styles.radio} style={{ backgroundColor: colorOption }} />
-                                    </label>
-                                </div>
-                            ))
-                        }
+                    <div className={styles.formRow}>
+                        <i class="far fa-palette"></i>
+                        <div className={styles.radioContainer}>
+                            {
+                                colors.map((colorOption, index) => (
+                                    <div key={index}>
+                                        <label className={styles.label}>
+                                            <input
+                                                type='radio'
+                                                checked={color === colorOption}
+                                                onChange={() => setColor(colorOption)}
+                                            />
+                                            <span className={styles.radio} style={{ backgroundColor: colorOption }} />
+                                        </label>
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
 
                     <div className={styles.submitContainer}>

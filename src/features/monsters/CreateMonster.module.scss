@@ -22,7 +22,13 @@
 }
 
 .formRow {
+    display: flex;
+    align-items: center;
     padding: 32px 16px;
+
+    i {
+        margin-right: 16px;
+    }
 
     & + .formRow {
         border-top: 1px solid #CDD9E4;
@@ -90,6 +96,7 @@
 
 .radioContainer {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
