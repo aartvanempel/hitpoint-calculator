@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6cfe2d894186d3307c05d94829aff476",
+    "revision": "95cc19f73a1c115940d37d75936f1a8d",
     "url": "/hitpoint-calculator/index.html"
   },
   {
