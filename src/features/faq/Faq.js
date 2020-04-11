@@ -21,7 +21,7 @@ export default () => {
             <div className={styles.textContainer}>
                 <div>
                     <h2>What do I need the Hitpoint Calculator for?</h2>
-                    <p>This tool was created for dungeon masters that are bad at math and want to track hitpoints for multiple monsters or NPC’s.</p>
+                    <p>This tool was created for dungeon masters that are bad at math and want to track hitpoints for multiple monsters or NPC's.</p>
                 </div>
 
                 <div>
@@ -31,7 +31,9 @@ export default () => {
 
                 <div>
                     <h2>How do I use this tool?</h2>
-                    <p>Add monsters by clicking the ‘Add monster’ button at the bottom. Fill in a name for your monster (E.g. Goblin), set it’s hitpoints, change the color if you want <span>and change the amount if you want to add multiple copies. A number will be added to the copies to easily differentiate them</span>. Use the buttons below each monster in your list to substract and add hitpoints during your games.</p>
+                    <p>
+                        Add monsters by clicking the 'Add monster' button at the bottom. Fill in a name for your monster (E.g. Goblin), set it's hitpoints and change the color if you want. Use the buttons below each monster in your list to substract and add hitpoints during your games.
+                    </p>
                 </div>
 
                 <div>
@@ -46,7 +48,9 @@ export default () => {
 
                 <div>
                     <h2>Excuse me, but who am I talking to?</h2>
-                    <p>Hi I’m Koen. Dungeon master and webdesigner. E-mail me at <a href='mailto:dmkoen@gmail.com'>dmkoen@gmail.com</a> to talk about Dungeons and Dragons or if you have feedback on this tool.</p>
+                    <p>
+                        Hi we're Koen and Aart. Nerds extraordinaire. E-mail us at <a href='mailto:dungeonmasterkoen@gmail.com'>dungeonmasterkoen@gmail.com</a> to talk about Dungeons and Dragons or if you have feedback on this tool.
+                    </p>
                 </div>
             </div>
         </div>
